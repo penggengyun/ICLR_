@@ -1,7 +1,5 @@
 # PLC-InstrSyn: Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale
 
-[![Paper](https://img.shields.io/badge/Paper-ICLR%202026%20(Under%20Review)-blue)](https://openreview.net/forum?id=XXXX)
-[![Dataset](https://img.shields.io/badge/Dataset-Download-green)](https://anonymous.4open.science/r/PLC-InstrSyn-XXXX)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](LICENSE)
 
 This repository contains the official dataset and resources for the ICLR 2026 submission, "**Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale**".
@@ -30,12 +28,7 @@ The `PLC-Instr-Code` corpus is the primary contribution of this work. It is desi
 
 The dataset is provided in JSONL format. Each line in the file is a JSON object with the following structure:
 
-```json
-{
-  "instruction": "A detailed natural language specification for an industrial control task, including I/O requirements, control logic, safety constraints, and performance targets...",
-  "code": "PROGRAM Main\nVAR_INPUT\n    ...\nEND_VAR\nVAR_OUTPUT\n    ...\nEND_VAR\n\n(* Verified Structured Text (ST) code that implements the instruction *)\n\nEND_PROGRAM"
-}
-````
+
 
 ### Accessing the Data
 
@@ -46,39 +39,13 @@ The full, formally verified corpus can be found in the `data/` directory of this
 └── plc_instr_code_verified.jsonl  # The complete 11,669-pair dataset
 ```
 
-## 🛠️ Usage
 
-This dataset can be directly used for supervised fine-tuning of code generation models.
-
-### Fine-Tuning Example
-
-We provide example scripts for fine-tuning popular open-source models (e.g., Qwen, Llama) on our corpus in the `finetuning/` directory.
-
-```bash
-# Example fine-tuning command (see scripts for details)
-python finetuning/run_sft.py \
-    --model_name_or_path "path/to/base_model" \
-    --train_file "data/plc_instr_code_verified.jsonl" \
-    --output_dir "output/my_finetuned_plc_model"
-```
 
 ### Evaluation
 
 Scripts and benchmarks used for evaluating model performance can be found in the `evaluation/` directory. This allows for the reproduction of the results presented in our paper.
 
-## Citing Our Work
 
-If you use our framework or dataset in your research, please cite our paper. For the purpose of anonymous review, please use the following placeholder.
-
-```bibtex
-@inproceedings{anonymous2026plc,
-  title={Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale},
-  author={Anonymous Author(s)},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2026},
-  url={[https://openreview.net/forum?id=XXXX](https://openreview.net/forum?id=XXXX)}
-}
-```
 
 ## 📜 License
 
