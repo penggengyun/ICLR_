@@ -16,7 +16,7 @@ Our work introduces **`PLC-InstrSyn`**, a novel framework for generating high-fi
     5.  Interoperability
     6.  Contextual Complication
 
-* **A Large-Scale, Verified Corpus (`PLC-Instr-Code`):** We release a new dataset of **11,669 instruction-code pairs** in IEC 61131-3 Structured Text (ST). Each program in the corpus has been **formally verified** for semantic equivalence against its corresponding natural language instruction.
+* **A Large-Scale, Verified Corpus (`PLC-Instr-Code`):** We are releasing an initial set of **1000 instruction-code pairs** in IEC 61131-3 Structured Text (ST), with the full corpus to be made available progressively. Each program in the dataset has been formally verified for semantic equivalence against its corresponding natural language instruction.
 
 * **State-of-the-Art Performance:** We demonstrate that fine-tuning language models on `PLC-Instr-Code` significantly improves performance on verifiable PLC code generation, outperforming models trained on existing public data or with generic data synthesis methods.
 
