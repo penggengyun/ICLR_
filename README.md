@@ -32,13 +32,6 @@ The dataset is provided in JSONL format. Each line in the file is a JSON object 
 
 ### Accessing the Data
 
-The full, formally verified corpus can be found in the `data/` directory of this repository or downloaded from the anonymous link above.
-
-```bash
-/data
-└── plc_instr_code_verified.jsonl  # The complete 11,669-pair dataset
-```
-
 
 
 ### Evaluation
