@@ -7,9 +7,10 @@ This repository contains the official dataset and resources for the ICLR 2026 su
 Our work introduces `PLC-Spec-Syn`, a novel framework for generating high-fidelity instruction-code pairs for Programmable Logic Controller (PLC) programming. To address the critical scarcity of verified data in the industrial control domain, we employ a principled evolutionary process guided by real-world engineering standards. This process has produced `PLC-Spec-Code`, the first large-scale, formally verified corpus of its kind, containing **11,669** verified specification-code pairs.
 
 <p align="center">
-  <img src="[https://i.imgur.com/your-workflow-image-url.png](https://github.com/penggengyun/ICLR_/blob/main/PLC-Spec-Syn%20Workflow.png)" width="800" alt="PLC-Spec-Syn Workflow">
+  <img src="https://raw.githubusercontent.com/penggengyun/ICLR_/main/PLC-Spec-Syn%20Workflow.png" width="800" alt="PLC-Spec-Syn Workflow">
 </p>
-## Key Contributions
+
+*Key Contributions*：
 
 **A Principled Evolutionary Framework (`PLC-Spec-Syn`):** We systematically generate complex and realistic control tasks by evolving them along six orthogonal industrial axes: Functionality, Safety, Performance, Maintenance, Interoperability, and Contextual Complication.
 **A Large-Scale, Verified Corpus (`PLC-Spec-Code`):** We are releasing our full dataset of **11,669** instruction-code pairs in IEC 61131-3 Structured Text (ST). Each program in the dataset has been **formally verified** for semantic equivalence against its corresponding natural language instruction.
