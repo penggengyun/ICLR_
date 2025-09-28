@@ -1,48 +1,35 @@
-# PLC-InstrSyn: Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale
+# PLC-Spec-Syn: Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-ICLR%202026%20(Under%20Review)-B31B1B.svg)](https://openreview.net/forum?id=XXXX) 
+This repository contains the official dataset and resources for the ICLR 2026 submission, "**Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale**."
 
-This repository contains the official dataset and resources for the ICLR 2026 submission, "**Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale**".
+[cite_start]Our work introduces `PLC-Spec-Syn`, a novel framework for generating high-fidelity instruction-code pairs for Programmable Logic Controller (PLC) programming[cite: 213]. [cite_start]To address the critical scarcity of verified data in the industrial control domain, we employ a principled evolutionary process guided by real-world engineering standards[cite: 215]. [cite_start]This process has produced `PLC-Spec-Code`, the first large-scale, formally verified corpus of its kind, containing **11,669** verified specification-code pairs[cite: 217, 314].
 
-Our work introduces **`PLC-InstrSyn`**, a novel framework for generating high-fidelity instruction-code pairs for Programmable Logic Controller (PLC) programming. To address the critical scarcity of verified data in the industrial control domain, we employ a principled evolutionary process guided by real-world engineering standards. This process has produced **`PLC-Instr-Code`**, the first large-scale, formally verified corpus of its kind.
+<p align="center">
+  <img src="https://i.imgur.com/your-workflow-image-url.png" width="800" alt="PLC-Spec-Syn Workflow">
+</p>
+## Key Contributions
 
-## 🚀 Key Contributions
+* [cite_start]**A Principled Evolutionary Framework (`PLC-Spec-Syn`):** We systematically generate complex and realistic control tasks by evolving them along six orthogonal industrial axes: Functionality, Safety, Performance, Maintenance, Interoperability, and Contextual Complication[cite: 215].
+* [cite_start]**A Large-Scale, Verified Corpus (`PLC-Spec-Code`):** We are releasing our full dataset of **11,669** instruction-code pairs in IEC 61131-3 Structured Text (ST)[cite: 217]. [cite_start]Each program in the dataset has been **formally verified** for semantic equivalence against its corresponding natural language instruction[cite: 216].
+* [cite_start]**State-of-the-Art Performance:** We demonstrate that fine-tuning language models on `PLC-Spec-Code` significantly improves performance on verifiable PLC code generation by an average of 16.4% over base models[cite: 219].
 
-* **A Principled Evolutionary Framework (`PLC-InstrSyn`):** We systematically generate complex and realistic control tasks by evolving them along six orthogonal industrial axes:
-    1.  Functionality
-    2.  Safety
-    3.  Performance
-    4.  Maintenance
-    5.  Interoperability
-    6.  Contextual Complication
+## The `PLC-Spec-Code` Corpus
 
-* **A Large-Scale, Verified Corpus (`PLC-Instr-Code`):** We are releasing an initial set of **1000 instruction-code pairs** in IEC 61131-3 Structured Text (ST), with the full corpus to be made available progressively. Each program in the dataset has been formally verified for semantic equivalence against its corresponding natural language instruction.
-
-* **State-of-the-Art Performance:** We demonstrate that fine-tuning language models on `PLC-Instr-Code` significantly improves performance on verifiable PLC code generation, outperforming models trained on existing public data or with generic data synthesis methods.
-
-## 📊 The `PLC-Instr-Code` Corpus
-
-The `PLC-Instr-Code` corpus is the primary contribution of this work. It is designed to serve as a high-quality resource for training and evaluating language models on industrial code generation tasks.
+The `PLC-Spec-Code` corpus is the primary contribution of this work. It is designed to serve as a high-quality resource for training and evaluating language models on industrial code generation tasks.
 
 ### Dataset Format
 
-The dataset is provided in JSON format. 
+The dataset is provided in JSON format. Each entry has the following structure:
 
-
-
-### Accessing the Data
-
-
-
-### Evaluation
-
-Scripts and benchmarks used for evaluating model performance can be found in the `evaluation/` directory. This allows for the reproduction of the results presented in our paper.
-
-
-
-## 📜 License
-
-This project is licensed under the Apache 2.0 License. See the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-
-```
-```
+```json
+{
+  "instruction": "Generate IEC 61131-3 Structured Text (ST) code for the given industrial control specification...",
+  "output": "PROGRAM BIO_React_01_Control\\nVAR_INPUT...",
+  "metadata": {
+    "spec_id": "gen8_seed_69_variant_0_safety...",
+    "matiec_passed": true,
+    "generation_attempts": 1
+  }
+}
