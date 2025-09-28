@@ -7,7 +7,7 @@ This repository contains the official dataset and resources for the ICLR 2026 su
 [cite_start]Our work introduces `PLC-Spec-Syn`, a novel framework for generating high-fidelity instruction-code pairs for Programmable Logic Controller (PLC) programming[cite: 213]. [cite_start]To address the critical scarcity of verified data in the industrial control domain, we employ a principled evolutionary process guided by real-world engineering standards[cite: 215]. [cite_start]This process has produced `PLC-Spec-Code`, the first large-scale, formally verified corpus of its kind, containing **11,669** verified specification-code pairs[cite: 217, 314].
 
 <p align="center">
-  <img src="https://i.imgur.com/your-workflow-image-url.png" width="800" alt="PLC-Spec-Syn Workflow">
+  <img src="[https://i.imgur.com/your-workflow-image-url.png](https://github.com/penggengyun/ICLR_/blob/main/PLC-Spec-Syn%20Workflow.png)" width="800" alt="PLC-Spec-Syn Workflow">
 </p>
 ## Key Contributions
 
