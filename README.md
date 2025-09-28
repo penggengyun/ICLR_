@@ -1,7 +1,7 @@
 # PLC-Spec-Syn: Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/Paper-ICLR%202026%20(Under%20Review)-B31B1B.svg)](https://openreview.net/forum?id=XXXX) 
+
 This repository contains the official dataset and resources for the ICLR 2026 submission, "**Boosting Verifiable Industrial Code Generation by Reliable Task Generation at Scale**."
 
 [cite_start]Our work introduces `PLC-Spec-Syn`, a novel framework for generating high-fidelity instruction-code pairs for Programmable Logic Controller (PLC) programming[cite: 213]. [cite_start]To address the critical scarcity of verified data in the industrial control domain, we employ a principled evolutionary process guided by real-world engineering standards[cite: 215]. [cite_start]This process has produced `PLC-Spec-Code`, the first large-scale, formally verified corpus of its kind, containing **11,669** verified specification-code pairs[cite: 217, 314].
