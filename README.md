@@ -26,7 +26,7 @@ The `PLC-Instr-Code` corpus is the primary contribution of this work. It is desi
 
 ### Dataset Format
 
-The dataset is provided in JSONL format. Each line in the file is a JSON object with the following structure:
+The dataset is provided in JSON format. 
 
 
 
