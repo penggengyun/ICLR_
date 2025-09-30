@@ -30,7 +30,7 @@ The dataset is provided in JSON format. Each entry has the following structure:
   "input":"# Industrial Control Specification..."
   "output": "PROGRAM BIO_React_01_Control\\nVAR_INPUT...",
   "metadata": {
-    "spec_id": "gen8_seed_69_variant_0_safety...",
+    "spec_id": "gen6_seed_69_variant_0_safety...",
     "matiec_passed": true,
     "generation_attempts": 1
   }
